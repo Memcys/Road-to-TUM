@@ -10,6 +10,9 @@
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{siunitx}
+\usepackage{graphicx}
+
+\graphicspath{{Images/}}
 
 % Define my "abstract" title, following https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Abstract
 \renewcommand{\abstractname}{声明}
@@ -21,13 +24,15 @@
 \begin{document}
 \maketitle
 
-\begin{center}
-当前进度：德银开户体验（见 \ref{ap} 附录）。  
-\end{center}
+% \begin{center}
+当前进度：德银开户体验（见 \ref{ap} 附录），签证材料（见 \ref{sec:visa} 节），及预约递签（见 \ref{sec:visa-material} 节）。
+
+希望大家随时在 QQ 群里指出有误或写得不清楚的地方。有任何其他建议也可随时在 QQ 群里提出。
+% \end{center}
 
 \vfill
 
-\abstract{本文所参考内容将尽可能给出出处，且本文骨干内容主要基于：
+\abstract{本文所参考内容将尽可能注明出处，且本文骨干内容主要基于：
 \begin{enumerate}          % inline enumerate with *, given [inline] option in package enumitem
   \item 16级 QQ 群文件 “\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”，
   \item 张顶兰老师邮件的附件，
@@ -100,7 +105,7 @@
         \item 护照、身份证原件 + 1 份复印件
         \item TUM 通知书 A4 单面
         \item 登记卡（手写）
-        \item 人民币现金 850 元（实际为汇款）
+        \item 人民币 850 元（半年期）/ 1200 元（一年期）（二者均可。注意，转账时仍可能按比例扣除手续费。实际为汇款）
       \end{enumerate}
       \end{multicols}
     \item APS 预约递签
@@ -159,12 +164,14 @@ TUM 给的建议是选择 AOK 公司。
 \item 递签，并缴纳申请费（60 欧元，以人民币支付）。
 \item 领取护照（6 周以上）。
 \end{enumerate}
-注：
+
+\subsection{关于递签}\label{sec:visa}
+预约递签的网址 \url{https://service2.diplo.de/rktermin/extern/choose_category.do?locationCode=peki&realmId=12&categoryId=156&request_locale=en}.
 \begin{description}
 \item[最早可于行程开始前三个月申请签证] ---见 \url{https://china.diplo.de/cn-zh/service/visa-einreise/faq-schengenvisa/1434980} 问题 8.
 \item[重新预约] ---以下两条见\sloppy \url{https://www.aps.org.cn/zh/verfahren-und-services-deutschland/visum-fur-deutschland} 中“\textbf{关于签证预约}”。预约提交后会收到系统发送的确认邮件，如果预约了错误日期或者预留的信息有误，请点击该邮件中的取消链接，然后重新预约即可
 \item[重复预约被取消的情形] 如果申请人改动个人信息（比如护照号码，姓名，电话号码）进行重复预约，所有预约将被系统取消并且不会告知申请人！ 
-\item[重新预约递签的说明（仅限在北京审核部递签的情况）] ---见\sloppy \url{https://www.aps.org.cn/zh/verfahren-und-services-deutschland/visum-fur-deutschland}\\
+\item[重新预约递签的说明（仅限在北京审核部递签的情况）] ---见 \url{https://www.aps.org.cn/zh/verfahren-und-services-deutschland/visum-fur-deutschland}\\
 通过在线系统预约北京审核部递签的申请人（C 程序 D 程序 A 程序），重新预约时有以下几种情况：
 \begin{itemize}
 \item 如果在递签日之前要取消预约，点击预约确认邮件中的取消链接，即可重新预约。
@@ -200,18 +207,18 @@ TUM 给的建议是选择 AOK 公司。
 \end{enumerate}
 材料集齐后统一交给张顶兰老师，由她交给APS.
 
-\subsubsection{签证所需材料（如无说明，一份原件加两份复印件）}
+\subsubsection{签证所需材料（如无说明，一份原件加两份复印件）}\label{sec:visa-material}
 参考 \url{https://china.diplo.de/cn-zh/service/visa-einreise/nationales-visum/1345434#content_2} 中文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}。如没有另外说明，其余所递交的材料一式三份（原件加两份复印件），即需要递交两套（？）相同的材料。每套材料按下列顺序排列：
 \begin{enumerate}
 \item 1 份已生成 PDF 文件的 videx \url{https://videx.d
-iplo.de/} 表格中的最后页（第 7 页）的打印件
+iplo.de/} 表格中的最后页（英文界面生成 7 页。中文界面生成 6 页。但官方说明里面以“第 7 页”备注。建议在最后一步导出 pdf 时切换至英文界面。填写内容不受语言切换影响影响。）的打印件
 \item 2 份用德文完整填写并亲笔签名的居留许可\underline{申请表}%以及符合外国人居留法第53和54条要求的声明（可从 \url{https://china.diplo.de/cn-zh/service/visa-einreise/nationales-visum/1345434#content_2} 下载。
 长期签证申请表（德文中文） \url{https://china.diplo.de/blob/1427944/d2799d8c6533d3bf53d4a936bcb4a8e8/pdf-antrag-natvisum-data.pdf} 及 3 张相同的白色背景的近期\underline{护照照片}\\
-（用于签证申请的护照照片必须是近期的，超过6个月的照片将不被接受。尺寸为4.5厘米 x 3.5 厘米，高分辨率和白色背景。含下巴和脖子的正面照，脸部和眼睛不得遮挡，脸部大小必须占照片的70-80％。
+（用于签证申请的护照照片必须是近期的，超过6个月的照片将不被接受。尺寸为 4.5厘米 x 3.5 厘米，高分辨率和白色背景。含下巴和脖子的正面照，脸部和眼睛不得遮挡，脸部大小必须占照片的70-80％。
 如证件照明显超过6个月或不符合规定，签证申请将不予受理并被退回。---见 \url{https://china.diplo.de/cn-zh/service/visa-einreise/faq-schengenvisa/1434980} 问题 21）；
 \item 亲笔签名的\underline{旅行护照}，并附上护照照片页复印件 2 份；护照有效期应超出签证有效期 3 个月以上；
 \item 德国高校\underline{录取通知书}以及录取通知书上所要求的语言水平证明（文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}指出，“必要时附上德文翻译”）；
-\item \sloppy 为期一年至少 8640 欧元的银行存款证明（限制提款账户），（可在德国大使馆官网上找到代开德国境内存款证明的服务\url{http://www.china.diplo.de/Vertretung/china/zh/02-visa/02-nationale-visa/Einrichtung_20Sperrkonto-17022017.html}）；
+\item \sloppy 为期一年至少 8640 欧元 / 半年至少 4320 欧元（已取得德国使馆回信确认。见\ref{ap} 附录）的银行存款证明（限制提款账户），（可在德国大使馆官网上找到代开德国境内存款证明的服务\url{http://www.china.diplo.de/Vertretung/china/zh/02-visa/02-nationale-visa/Einrichtung_20Sperrkonto-17022017.html}）；
 \item \underline{在学证明}，并附\textbf{德文译文}。（在本科教育网-学籍学工栏目下载\href{http://bkjy.ucas.ac.cn/index.php/jyjx/download/3619-2017-08-31-08-51-16}{在学证明申请表及模板}，填写完本人信息之后，持申请书到本科部找李涵老师盖章，然后到学生处办理在学证明盖章手续；请大家填好申请表和在学证明模板之后，统一交给一个人办理）；
 \item 截至申请递交前的
 完整无间隙的\underline{表格式德文个人简历}
@@ -277,10 +284,10 @@ iplo.de/} 表格中的最后页（第 7 页）的打印件
 \item 护照、身份证原件，复印件一份。复印件请以 1：1 比例清晰复印在 A4 纸上；
 \item 德国学校提供的大学入学通知书A4单面打印；
 \item 登记卡。手写。下载链接： \url{https://china.db.com/china/cn/content/5777.html} 中的\href{https://china.db.com/china/docs/Deutsche_Bank-China-Account-Opening-Process-And-Introduction.pdf}{登记卡}；
-\item 人民币现金 850 元。实际为汇款。去中国银行、工商银行均需当前银行卡，暂不接受现金汇款。
+\item 人民币现金 850 元（一年限制题款账户） / 1200 元（半年限制题款账户）。二者均可。注意，转账时仍可能按比例扣除手续费。实际为汇款。去中国银行、工商银行均需当前银行卡，暂不接受现金汇款。
 \end{itemize}
-“北京开户是在一楼登记处登记，然后上 27 楼，进去拿号排队，提交开户材料，分行审核通过后，做手续费的汇款”。“手续费包括了国际快递费和分行手续费，共计人民币 850 元（直接汇款即可）”%! link needed here
-（该段文字出处待补充）
+% “北京开户是在一楼登记处登记，然后上 27 楼，进去拿号排队，提交开户材料，分行审核通过后，做手续费的汇款”。“手续费包括了国际快递费和分行手续费，共计人民币 850 元（直接汇款即可）”%! link needed here
+% （该段文字出处待补充）
 
 \section{德国居留许可申请}
 学生到达德国之后，停留时间超过 3 个月且签证有效期不足以覆盖整个访学期限的，须申请德国居留许可（如果签证有效期能够覆盖整个访学期间，则无需申请居留许可）。
@@ -452,6 +459,13 @@ Contact in Germany: & Dalma Alagha \\
 \noindent
 备注：
 \begin{description}
+\item[一年/半年期] 李洪波同学已得到德国使馆邮件（图 \ref{fig:email}）回复，一年期限制提款和半年期限制题款均可。注意，二者的扣款情况，除开户手续费 (850 / 1200 元人民币) 外，还有可能存在按比例收取的转账手续费。如需了解，请提前向本地银行确认。
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=.25\textheight]{email-from-Visa}
+  \caption{德国使馆回信}
+  \label{fig:email}
+\end{figure}
 \item[行程] 地铁一号线大望路站，刷卡（码）出站后，顺着 \textbf{\color{blue}A （东北）口}出站方向，前行约十米，沿着\textbf{\color{blue}“华贸中心”通道}前行。进入“华贸中心”（B1，负一层）后，按指示路牌 \textbf{\color{blue}“华贸写字楼”} 方向前行至一上行扶梯处。出扶梯左手入口即有``Deutsche Bank'' 标志。有服务人员在柜台等候。按指示在机器上选 27 层德意志银行，得到二维码。刷码进入写字中心。乘梯至 27 层，左手即为德意志银行。
 \item[表格]
 \begin{itemize}
