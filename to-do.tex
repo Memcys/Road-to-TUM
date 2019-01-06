@@ -17,7 +17,7 @@
 % Define my "abstract" title, following https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Abstract
 \renewcommand{\abstractname}{声明}
 
-\title{Road to TUM\\for UCASer in Summer 2019}
+\title{Road to TUM\\for UCASer in Summer, 2019}
 \author{UCASer 16}
 \date{\today}
 
@@ -27,20 +27,21 @@
 % \begin{center}
 请务必确认，所填表格为从官方下载的最新版本（如果有）。本文档中的链接为截至 2018 年 12 月下旬的版本，不保证为当前最新版本。
 
-当前进度：德银开户体验（见 \ref{ap} 附录），签证材料（见 \ref{sec:visa} 节），及预约递签（见 \ref{sec:visa-material} 节）。
+当前进度：签证材料（见 \ref{sec:visa} 节），及预约递签（见 \ref{sec:visa-material} 节）。
 
 希望大家随时在 QQ 群里指出有误或写得不清楚的地方。有任何其他建议也可随时在 QQ 群里提出。
 % \end{center}
 
 \vfill
 
-\abstract{本文所参考内容将尽可能注明出处，且本文骨干内容主要基于：
+% \abstract{
+本文所参考内容将尽可能注明出处，且本文骨干内容主要基于：
 \begin{enumerate}          % inline enumerate with *, given [inline] option in package enumitem
   \item 16级 QQ 群文件 “\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”，
   \item 张顶兰老师邮件的附件，
   \item TUM Dalma 邮件及其附件。
 \end{enumerate}
-}
+% }
 
 \vfill
 
@@ -48,7 +49,7 @@
 
 这篇文档由 \LaTeX 写作编译成 pdf. 目前放在 \href{https://www.overlear.com}{overleaf.com} （项目名为 \href{https://www.overleaf.com/2269426218fxwmgyxjywnn}{Road-to-TUM}） 以及 \href{https://github.com}{github.com} （项目名为 \href{https://github.com/Memcys/Road-to-TUM.git}{Road-to-TUM}, 同时有利用 Pandoc 不定期从 .tex 转换为 .docx 的 Word 文档）上。目前 overleaf 网络访问不畅通，故新添了 github 项目。
 
-主要内容的增补将仍在文件“\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”中完成。希望有兴趣的同学可以参与这个文档编写项目。
+主要内容的增补将同时在文件“\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”中进行（目前彭子原同学贡献了多数内容）。现在这两份文件的分别比较大。希望有兴趣的同学可以参与这个文档编写项目。
 
 目前文档正在增添和修补中。文中“做什么”“建议做什么”“为什么这么做”等杂糅。有些地方指出 见附件 等，是直接粘贴的原句。但附件没有上传。此外，videx, 递签等部分细节仍待补充。各节内容都需补充。中英交替，语言表述不够准确、精炼等情况，暂不处理。
 
@@ -87,16 +88,16 @@
     \item 签证材料
       \begin{multicols}{2}
       \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subsubprocess\theenumiii]{}} \arabic*.]
-      \item 1 份 videx 表格最后页（第 7 页）
-      \item 2 份德文居留许可申请表及 \\
-      3 张护照照片
+      \item 1 份 videx 表格最后页（英文第 7 页）
+      \item 2 份德文居留许可申请表及 3 张护照照片
       \item 护照（原件）及 2 份护照照片页复印件
       \item TUM 通知书及语言水平证明
       \item 存款证明
-      \item 英语在学证明
-      \item 个人简历
-      \item 留学德国的理由说明书
+      \item 在学证明（附\textbf{德文翻译}）
+      \item \textbf{德文版}个人简历
+      \item 留学德国的\textbf{德文版}理由说明书
       \item 医疗保险证明
+      \item APS 审核证明/审核证书/传真
       \end{enumerate}
       \end{multicols}
     \item 德意志银行开户
@@ -220,13 +221,13 @@ iplo.de/} 表格中的最后页（英文界面生成 7 页。中文界面生成 
 如证件照明显超过6个月或不符合规定，签证申请将不予受理并被退回。---见 \url{https://china.diplo.de/cn-zh/service/visa-einreise/faq-schengenvisa/1434980} 问题 21）；
 \item 亲笔签名的\underline{旅行护照}，并附上护照照片页复印件 2 份；护照有效期应超出签证有效期 3 个月以上；
 \item 德国高校\underline{录取通知书}以及录取通知书上所要求的语言水平证明（文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}指出，“必要时附上德文翻译”）；
-\item \sloppy 为期一年至少 8640 欧元 / 半年至少 4320 欧元（已取得德国使馆回信确认。见\ref{ap} 附录）的银行存款证明（限制提款账户），（可在德国大使馆官网上找到代开德国境内存款证明的服务\url{http://www.china.diplo.de/Vertretung/china/zh/02-visa/02-nationale-visa/Einrichtung_20Sperrkonto-17022017.html}）；
+\item \sloppy 为期一年至少 8640 欧元 / 半年至少 4320 欧元（已取得德国使馆回信确认。见 \ref{ap} 附录）的银行存款证明（限制提款账户），（可在德国大使馆官网上找到代开德国境内存款证明的服务 \url{http://www.china.diplo.de/Vertretung/china/zh/02-visa/02-nationale-visa/Einrichtung_20Sperrkonto-17022017.html}）；
 \item \underline{在学证明}，并附\textbf{德文译文}。（在本科教育网-学籍学工栏目下载\href{http://bkjy.ucas.ac.cn/index.php/jyjx/download/3619-2017-08-31-08-51-16}{在学证明申请表及模板}，填写完本人信息之后，持申请书到本科部找李涵老师盖章，然后到学生处办理在学证明盖章手续；请大家填好申请表和在学证明模板之后，统一交给一个人办理）；
 \item 截至申请递交前的
 完整无间隙的\underline{表格式德文个人简历}
 \item \textbf{德文版}的\underline{留学理由说明书}，详细叙述留学的原因和留学对将来的职业生涯的影响。
 \item \underline{医疗保险证明}：自入境德国起至少 90天有效
-\item 德国户籍登记机构的注销户籍登记证明（只针对此前在德国常住过，并持有有效长期签证/居留证或长期签证、居留证过期不满六个月的）
+{\color{gray}\item 德国户籍登记机构的注销户籍登记证明（只针对此前在德国常住过，并持有有效长期签证/居留证或长期签证、居留证过期不满六个月的）}
 \item APS 的\underline{审核证明/审核证书/传真}
 \end{enumerate}
 
@@ -243,10 +244,10 @@ iplo.de/} 表格中的最后页（英文界面生成 7 页。中文界面生成 
 \item 预计进入申根区日期：与保险日期保持一致
 \item 预计离开申根区日期：进入申根区日期 90 天后
 \item 预计逗留期或过境期（天数）：90
-\item 出生日期格式 mm.dd.yyyy （目前按提示填写 dd.mm.yyyy 则报错。李明阳添加）
 \end{itemize}
-注：
+以下根据此次填写经历提取的注意项，由李明阳添加。
 \begin{itemize}
+  \item 出生日期格式 mm.dd.yyyy （目前按提示填写 dd.mm.yyyy 则报错）
   \item 中文界面填写并生成的 VIDEX 表格只有 6 页。英文界面填写并生成的 VIDEX 表格有 7 页。
   \item 仅需打印尾页（含二维码那一页）
   \item 尾页有 1 个一维码， 3 个二维码
