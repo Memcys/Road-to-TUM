@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass[final]{book}
 \usepackage{ctex}
 \usepackage{enumerate}
 \usepackage{enumitem}   % [inline] option for inline enumerate, following https://tex.stackexchange.com/a/146311
@@ -12,6 +12,11 @@
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{appendix}
+% % Use for advanced enum-list functionality
+% \usepackage{enumitem}
+
+% % Define question and answer environment
+% \newenvironment{faq}{\begin{description}[style=nextline]}{\end{description}}
 
 \graphicspath{{Images/}}
 
@@ -54,7 +59,7 @@
 
 这份文档由 \LaTeX 写作编译成 pdf. 目前放在 \href{https://www.overlear.com}{overleaf.com} （项目名为 \href{https://www.overleaf.com/2269426218fxwmgyxjywnn}{Road-to-TUM}） 以及 \href{https://github.com}{github.com} （项目名为 \href{https://github.com/Memcys/Road-to-TUM.git}{Road-to-TUM}, 同时有利用 Pandoc 不定期从 .tex 转换为 .docx 的 Word 文档）上。目前 overleaf 网络访问不畅通，故新添了 github 项目。
 
-主要内容的增补将同时在文件“\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”中进行（目前PZY同学贡献了多数内容）。现在这两份文件的分别比较大。希望有兴趣的同学可以参与这个文档编写项目。
+% 主要内容的增补将同时在文件“\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”中进行（目前PZY同学贡献了多数内容）。现在这两份文件的分别比较大。希望有兴趣的同学可以参与这个文档编写项目。
 
 目前文档正在增添和修补中。文中“做什么”“建议做什么”“为什么这么做”等杂糅。有些地方指出 见附件 等，是直接粘贴的原句。但附件没有上传。此外，videx, 递签等部分细节仍待补充。各节内容都需补充。中英交替，语言表述不够准确、精炼等情况，暂不处理。
 
@@ -223,7 +228,7 @@ TUM 给的建议是选择 AOK 公司。
 \item 在德意志银行官网上 \url{https://china.db.com/china/cn/content/5777.html} 下载开户表格。填写方法可以按照样表，也可以在以下网站上找到填写攻略：\\
 \url{https://www.sohu.com/a/238196417_100189530} （比较全）\\
 \url{https://www.sohu.com/a/218431242_507614}
-\item 需要准备资金来源证明原件（中英文。办理人不能为学生本人---德国使馆将认定留学生本人无收入。需要冻结资产，欧元形式。冻结时间：最好是冻结到我们去开户的前一天或者当天---\url{http://toutiao.manqian.cn/wz_9HOPNjkAgR.html}。该证明上时间只需持续一天。如 2018 年 12 月 20 日至 2018 年 12 月 21 日---\url{http://toutiao.manqian.cn/wz_16ASBZf2o3.html?tdsourcetag=s_pctim_aiomsg}. ）；
+\item\label{de-bank-ZJR-laptop-USB} 需要准备资金来源证明原件（中英文。办理人不能为学生本人---德国使馆将认定留学生本人无收入。需要冻结资产，欧元形式。冻结时间：最好是冻结到我们去开户的前一天或者当天---\url{http://toutiao.manqian.cn/wz_9HOPNjkAgR.html}。该证明上时间只需持续一天。如 2018 年 12 月 20 日至 2018 年 12 月 21 日---\url{http://toutiao.manqian.cn/wz_16ASBZf2o3.html?tdsourcetag=s_pctim_aiomsg}. ）；
 \item 单面打印两份开户表格，一份自留。 ZJR 建议携带笔记本电脑和 U 盘，因可能需要随时修改；
 \item 护照、身份证原件，复印件一份。复印件请以 1：1 比例清晰复印在 A4 纸上（阶梯教室打印店的质量即可）；
 \item 德国学校提供的大学入学通知书 A4 单面打印；
@@ -315,38 +320,38 @@ TUM 给的建议是选择 AOK 公司。
 \section{递签所需材料（如无说明，一份原件加两份复印件）}\label{sec:visa-material}
 请注意， APS 递签处给出的要求不同于官网的要求。本节灰色内容由于参考的是官网要求，故全部为过时/无效内容。请直接调转至其后的正常颜色的内容 \ref{sec:visa-material-17Jan}。
 
-{\color{gray}
-\subsection*{过时内容}\label{sec:visa-material-older}
-参考 \url{https://china.diplo.de/cn-zh/service/visa-einreise/nationales-visum/1345434#content_2} 中文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}。如没有另外说明，其余所递交的材料一式三份（原件加两份复印件），即需要递交两套（？）相同的材料。每套材料按下列顺序排列：
-\begin{enumerate}
-\item 1 份已生成 PDF 文件的 videx \url{https://videx.d
-iplo.de/} 表格中的最后页（英文界面生成 7 页。中文界面生成 6 页。但官方说明里面以“第 7 页”备注。建议在最后一步导出 pdf 时切换至英文界面。填写内容不受语言切换影响影响。）的打印件
-\item 2 份用德文完整填写并亲笔签名的居留许可\underline{申请表}%以及符合外国人居留法第53和54条要求的声明（可从 \url{https://china.diplo.de/cn-zh/service/visa-einreise/nationales-visum/1345434#content_2} 下载。
-长期签证申请表（德文中文） \url{https://china.diplo.de/blob/1427944/d2799d8c6533d3bf53d4a936bcb4a8e8/pdf-antrag-natvisum-data.pdf} 及 3 张相同的白色背景的近期\underline{护照照片}\\
-（用于签证申请的护照照片必须是近期的，超过6个月的照片将不被接受。尺寸为 4.5厘米 x 3.5 厘米，高分辨率和白色背景。含下巴和脖子的正面照，脸部和眼睛不得遮挡，脸部大小必须占照片的70-80％。
-如证件照明显超过6个月或不符合规定，签证申请将不予受理并被退回。---见 \url{https://china.diplo.de/cn-zh/service/visa-einreise/faq-schengenvisa/1434980} 问题 21）；
-\item 亲笔签名的\underline{旅行护照}，并附上护照照片页复印件 2 份；护照有效期应超出签证有效期 3 个月以上；
-\item 德国高校\underline{录取通知书}以及录取通知书上所要求的语言水平证明（文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}指出，“必要时附上德文翻译”）；\\
-TUM 录取邮件 Offizieller Zulassungsbescheid für das Sommersemester 2019 // official admission letter to study at TUM in summer term 2019 指出，请同时打印该邮件，避免使馆产生怀疑。
-\item \sloppy 为期一年至少 8640 欧元 / 半年至少 4320 欧元（已取得德国使馆回信确认。见图 \ref{fig:email}）的银行存款证明（限制提款账户），（可在德国大使馆官网上找到代开德国境内存款证明的服务 \url{http://www.china.diplo.de/Vertretung/china/zh/02-visa/02-nationale-visa/Einrichtung_20Sperrkonto-17022017.html}）；
-\item \underline{在学证明}，并附\textbf{德文译文}。（在本科教育网-学籍学工栏目下载\href{http://bkjy.ucas.ac.cn/index.php/jyjx/download/3619-2017-08-31-08-51-16}{在学证明申请表及模板}，填写完本人信息之后，持申请书到本科部找%李涵
-LH 老师盖章，然后到学生处办理在学证明盖章手续；请大家填好申请表和在学证明模板之后，统一交给一个人办理）；
-\item 截至申请递交前的
-完整无间隙的\underline{表格式德文个人简历}
-\item \textbf{德文版}的\underline{留学理由说明书}，详细叙述留学的原因和留学对将来的职业生涯的影响。
-\item \underline{医疗保险证明}：自入境德国起至少 90 天有效
-{\color{gray}\item 德国户籍登记机构的注销户籍登记证明（只针对此前在德国常住过，并持有有效长期签证/居留证或长期签证、居留证过期不满六个月的）}
-\item APS 的\underline{审核证明/审核证书/传真}
+% {\color{gray}
+% \subsection*{过时内容}\label{sec:visa-material-older}
+% 参考 \url{https://china.diplo.de/cn-zh/service/visa-einreise/nationales-visum/1345434#content_2} 中文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}。如没有另外说明，其余所递交的材料一式三份（原件加两份复印件），即需要递交两套（？）相同的材料。每套材料按下列顺序排列：
+% \begin{enumerate}
+% \item 1 份已生成 PDF 文件的 videx \url{https://videx.d
+% iplo.de/} 表格中的最后页（英文界面生成 7 页。中文界面生成 6 页。但官方说明里面以“第 7 页”备注。建议在最后一步导出 pdf 时切换至英文界面。填写内容不受语言切换影响影响。）的打印件
+% \item 2 份用德文完整填写并亲笔签名的居留许可\underline{申请表}%以及符合外国人居留法第53和54条要求的声明（可从 \url{https://china.diplo.de/cn-zh/service/visa-einreise/nationales-visum/1345434#content_2} 下载。
+% 长期签证申请表（德文中文） \url{https://china.diplo.de/blob/1427944/d2799d8c6533d3bf53d4a936bcb4a8e8/pdf-antrag-natvisum-data.pdf} 及 3 张相同的白色背景的近期\underline{护照照片}\\
+% （用于签证申请的护照照片必须是近期的，超过6个月的照片将不被接受。尺寸为 4.5厘米 x 3.5 厘米，高分辨率和白色背景。含下巴和脖子的正面照，脸部和眼睛不得遮挡，脸部大小必须占照片的70-80％。
+% 如证件照明显超过6个月或不符合规定，签证申请将不予受理并被退回。---见 \url{https://china.diplo.de/cn-zh/service/visa-einreise/faq-schengenvisa/1434980} 问题 21）；
+% \item 亲笔签名的\underline{旅行护照}，并附上护照照片页复印件 2 份；护照有效期应超出签证有效期 3 个月以上；
+% \item 德国高校\underline{录取通知书}以及录取通知书上所要求的语言水平证明（文件\href{https://china.diplo.de/blob/1341652/6085aece6f28eb2e16b4d851c3632005/pdf-merkblatt-natvisum-studium-data.pdf}{留学签证须知}指出，“必要时附上德文翻译”）；\\
+% TUM 录取邮件 Offizieller Zulassungsbescheid für das Sommersemester 2019 // official admission letter to study at TUM in summer term 2019 指出，请同时打印该邮件，避免使馆产生怀疑。
+% \item \sloppy 为期一年至少 8640 欧元 / 半年至少 4320 欧元（已取得德国使馆回信确认。见图 \ref{fig:email}）的银行存款证明（限制提款账户），（可在德国大使馆官网上找到代开德国境内存款证明的服务 \url{http://www.china.diplo.de/Vertretung/china/zh/02-visa/02-nationale-visa/Einrichtung_20Sperrkonto-17022017.html}）；
+% \item \underline{在学证明}，并附\textbf{德文译文}。（在本科教育网-学籍学工栏目下载\href{http://bkjy.ucas.ac.cn/index.php/jyjx/download/3619-2017-08-31-08-51-16}{在学证明申请表及模板}，填写完本人信息之后，持申请书到本科部找%李涵
+% LH 老师盖章，然后到学生处办理在学证明盖章手续；请大家填好申请表和在学证明模板之后，统一交给一个人办理）；
+% \item 截至申请递交前的
+% 完整无间隙的\underline{表格式德文个人简历}
+% \item \textbf{德文版}的\underline{留学理由说明书}，详细叙述留学的原因和留学对将来的职业生涯的影响。
+% \item \underline{医疗保险证明}：自入境德国起至少 90 天有效
+% {\color{gray}\item 德国户籍登记机构的注销户籍登记证明（只针对此前在德国常住过，并持有有效长期签证/居留证或长期签证、居留证过期不满六个月的）}
+% \item APS 的\underline{审核证明/审核证书/传真}
 
-\vbox{}
-{\color{gray}
-以下材料也需携带。放置顺序未知。}
-\item\label{inline-ensurance-acknowledgement} "如果签证申请人计划在德国居留不超过一年，请在签证材料中附上一份 \href{https://www.aps.org.cn/wp-content/uploads/Belehrung_KV.pdf}{保险声明}"---见 \url{https://www.aps.org.cn/zh/verfahren-und-services-deutschland/visum-fur-deutschland}。放置顺序未知
-\item 一份联系方式及代办人的附加证明---见 \ref{inline-additional-proof}。放置顺序未知
-\item 现金（数量未知。但不少于 33 元人民币。见 \ref{inline-money}）
-\item 预约递签的回复邮件打印版（应该是一份。出处待补充）
-\end{enumerate}
-}{
+% \vbox{}
+% {\color{gray}
+% 以下材料也需携带。放置顺序未知。}
+% \item\label{inline-ensurance-acknowledgement} "如果签证申请人计划在德国居留不超过一年，请在签证材料中附上一份 \href{https://www.aps.org.cn/wp-content/uploads/Belehrung_KV.pdf}{保险声明}"---见 \url{https://www.aps.org.cn/zh/verfahren-und-services-deutschland/visum-fur-deutschland}。放置顺序未知
+% \item 一份联系方式及代办人的附加证明---见 \ref{inline-additional-proof}。放置顺序未知
+% \item 现金（数量未知。但不少于 33 元人民币。见 \ref{inline-money}）
+% \item 预约递签的回复邮件打印版（应该是一份。出处待补充）
+% \end{enumerate}
+% }{
 %
 \subsection{2019 年 1 月 17 日递签材料}\label{sec:visa-material-17Jan}
 本更新内容在附录 \ref{ap:visa-figures} 中有补充。
@@ -463,6 +468,8 @@ ECTS Credits'' 后的 ``Details'' 链接。打开的（如果内容正常）链�
 \chapter{航班}
 据15级 ZJR 表示，大部分德国人 5 点后不工作；最好下午 2 点到（德国机场？学校？）。
 
+对于航班公司，ZJR 认为俄航起飞时有些吓人，芬航比较舒适。两小时
+
 \chapter{Registration for TUM}
 By March 1st, 2019 (only after reveiving access data for TUMonline and TUM regisration number---``Matrikelnummer'')
 \begin{enumerate}
@@ -489,11 +496,56 @@ Please \textbf{wait for it}: also if your friends already might have received th
 After you logged in TUMonline a new application form appears: Please \textbf{DO NOT} fill in this online application form!! Just \textbf{\color{blue}ignore/cancel this step}!!! So please do \textbf{NOT} enter any personal data in TUMonline! Just upload a photo as mentioned below.
 \end{quotation}
 
+\chapter{到德国后}
+\begin{itemize}
+  \item 银行卡解冻
+  \item 地铁卡买全票（90 欧元。我们的仅为 ``Basic Semester Ticket''.）
+  \item 保险补全信息
+  \item 注意某些课程可能会提前开课（比如物理系的 GPU 计算课程，大约在 4 月 11 日开始首堂课，并表示如果错过首堂课，将分配不到期末任务。）
+  \item (From the airport to) {\color{blue}Garching}: either with S1 to Neufahrn, from there take bus 690; or S-Bahn S8 to Ismaning and take bus 230. (from \href{https://distributed-campus.org/tumwelcomeguide/portal/media-type/html/language/en/role/student/page/default.psml/js_panename/DCContentObjectAusgabe/language/en/idgroup/19/id/96/typ/text}{TUM Welcome Guide})
+  \item If you actually want to go to {\color{blue}Munich city center}, look for the white "S" in a green circle, which is the sign for the suburban rail station located in the underground level of the airport. 2 suburban train (S-Bahn) lines go to the airport, {\color{blue}S1 and S8}. If you want to go to the Central Train Station (Hauptbahnhof), you can take either one.
+  \item Since the airport is located on the edge of the city, it is a good idea to buy the {\color{blue}Airport-City-Day-Ticket} for the entire network. This way, you can ride all of the public transportation provided by MVV (buses, S-Bahn, U-Bahn, and tram) until the next morning 6 am, without having to buy another ticket. Ticket machines are located outside the escalator leading to the platform, and an Airport-City-Day-Ticket is \euro{13,00}. It is a good idea to have cash on hand for buying your ticket. After you've bought your ticket, insert it in the blue, waist high validation machines also located on the entrance to the platform. This stamps the time and date, which tells you when you started to use the ticket (and how long it is valid for). There is no barrier to enter the train or platform, so just get on the train with your validated ticket. Remember not to lose your ticket, because a conductor may come by to see if you have bought one. (Riding without a ticket is called "Schwarzfahren" and will lead to a \euro{60} fine!)
+  \item If you only go to Garching or Weihenstephan (Freising) the ticket will be cheaper.
+  \item \href{https://distributed-campus.org/tumwelcomeguide/portal/media-type/html/language/en/role/student/page/default.psml/js_panename/DCContentObjectAusgabe/language/en/idgroup/19/id/111/typ/text}{Cell Phones (called "Handy" in Germany)}
+\end{itemize}
+
 \chapter{FAQ}
+\begin{enumerate}
+  \item 请问需要准备一些欧元现金吗？ \\
+  现金 \euro{700}，或现金 \euro{$100 \sim 200$} + 信用卡。（第一个月拿不到德意志银行卡。）
+  \item 请问（15 级）在德国还用中国手机号吗？ \\
+  可以用，不过开通国际漫游很贵。淘宝上可以买德国手机号。去之前装上激活。
+  \item 存款证明能以学生本人的身份开具吗？ \\
+  不能。德意志银行认定学生本人没有资金收入。
+  \item 请问资金冻结只需冻结到开户前一天吗？ \\
+  (ZJR) 还是冻结到开户后比较靠谱。(LMY) 小地方的银行支行，冻结程序、国际汇款程序可能都不太顺利。
+  \item 请问德银开户申请表上，后续汇款金额需要填写大于 0 欧吗？ \\
+  (ZJR) 需要，不然可能拒绝开户。
+  \item 德意志银行会在收到汇款后，通知个人吗？ \\
+  (ZZY) 未汇款会有电话通知。没问题就不会联系。
+  \item 签证需要面签吗？ \\
+  不需要。我们只需递签。而且工作人员是中国人。递签时工作人员指着一行德文（AOK 的保险证明没有盖章。需要有类似“未经盖章也生效”的字样），说这写的是什么难道你不知道吗？我递签时表示自己不会德语。检查材料的工作人员没有说我什么。
+  \item 递签材料中的保险证明是什么？ \\
+  是 \textbf{``Versicherungsbescheinigung''}（“保险证明”），\textbf{必须包含 ``Diese Bescheinigung ist maschinell erstellt und auch ohne Unterschrift gültig.''}（“此证书由计算机创建, 并且在没有签名的情况下也是有效的。"）{\color{gray}保险起见，可以同时携带 ``Mitgliedschaftsbescheinigung''（“会员证书”），不过该文件不被递签处认可，因为没有 ``Diese Bescheinigung ist maschinell erstellt und auch ohne Unterschrift gültig'' 字样。}
+  \item 什么时间都能预约递签吗？ \\
+  (ZJR) 是。计划好时间后尽快预约。不是每周都能去递签。(LMY) 一周中也可能只有一天能够递签。
+  \item 预约递签的网址？ \\
+  \href{https://service2.diplo.de/rktermin/extern/choose_category.do?locationCode=peki&realmId=12&categoryId=156&request_locale=de}{在线系统预约签证受理}。见 \ref{sec:visa} 节。请务必选择德语界面。英语界面会有部分文字缺失。德语界面在填写时会提供 德/英/中 三语。
+\end{enumerate}
 
 \chapter{一些建议}
 \begin{itemize}
-  \item 在学证明一次打印盖章即可，共 5 份。
+  \item 在学证明一次打印盖章即可，共 5 份（我只打了 4 份）。
+  \item 大学录取花名册按录取省份划分。建议同一省份同学帮本省同学代领。（但我们没有尝试过）
+  \item (ZZY) 强烈建议所有材料备份两份。
+  \item (PZY) 递签材料中，保险声明、联系人声明、申请表空白表可以多打印几份。
+  \item (PZY) 递签处禁止手机（等电子设备）。可以带纸质书去消遣。
+  \item (ZJR) 在德意志银行申请开户时，一定要带上电脑、U 盘，随时准备重新填表。（见 \ref{de-bank-ZJR-laptop-USB}。）
+  \item (ZJR) 签证材料一定要按照要求准备。例如，照片上刘海稍许遮住眉毛，差点被打回重新递签，幸亏有备份照片。材料中信息要一致，如出境日期，所有文件都要填同一日期。
+  \item (ZJR) 字母大小写的问题，一般来说，大写肯定不会出问题。
+  \item (ZJR) VIDEX 表格中停留日期填写 90 天，从 4 月 1 日开始。
+  \item (ZJR) 记得有一句，不是英语的，需提供英语翻译。在学证明需要中英文版本的（附加德文翻译）。
+  \item (JHX) 德银开户处交待，不要把材料订起来。
 \end{itemize}
 
 \begin{appendices}
@@ -621,7 +673,7 @@ Contact in Germany: & Dalma Alagha \\
   007 91995 28 DBEN 164 WWW ERO BV VJ \textbf{\color{blue}181024} 的\textbf{\color{blue}第 9 -- 19 页}），包括 ``Schufa'' 1 页， ``Entgeltinformation'' 3 页和 ``Depositor Information Sheet'' 1 页。 
   \item 请确保自动生成了 ``\textbf{\color{blue}First name/s}'', ``\textbf{\color{blue}Surname}'' 两栏
   \item 身份证、护照页复印件\textbf{避免过黑}。在空白处写上个人 “姓名” + “拼音”（此前已经有人建议姓名全部大写。我全部大写了）
-  \item 按照工作人员的意思，邮寄可能比自取\textbf{\color{blue}晚“一到两天”}。我选了邮寄。邮寄方式应该为 EMS.
+  \item 按照工作人员的意思，邮寄可能比自取\textbf{\color{blue}晚“一到两天”}。我选了邮寄。邮寄方式为 EMS. 周一向德意志银行学生账户成功汇款，当周五拿到德意志银行的 EMS 开户证明。
   \item 银行张贴的开户示例与官网示例稍有不同---主要是“城市”全部写成“\textbf{\color{blue}省份+城市}”（或城市+省份。可由逗号或空格分隔。下同）。我拍了前两张，将发群里。
   \begin{itemize}
     \item ``Place of birth'' 省份 + 城市
