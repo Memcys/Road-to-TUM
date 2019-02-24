@@ -1,10 +1,11 @@
-\documentclass[final]{book}
+\documentclass[oneside,final]{book}
 \usepackage{ctex}
 \usepackage{enumerate}
 \usepackage{enumitem}   % [inline] option for inline enumerate, following https://tex.stackexchange.com/a/146311
 \usepackage[colorlinks]{hyperref}
 \usepackage{bookmark}
-\usepackage[left=3cm,right=3cm]{geometry}
+\usepackage%[left=3cm,right=3cm]
+{geometry}
 \usepackage{multicol}
 \usepackage[official]{eurosym}
 \usepackage{booktabs}
@@ -12,6 +13,7 @@
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{appendix}
+\usepackage{attachfile}
 % % Use for advanced enum-list functionality
 % \usepackage{enumitem}
 
@@ -33,9 +35,8 @@
 % \begin{center}
 请务必确认，所填表格为从官方下载的最新版本（如果有）。本文档中的链接为截至 2018 年 12 月下旬的版本，不保证为当前最新版本。
 
-当前进度：关于递签（见 \ref{sec:visa} 节，特别是签证所需材料 \ref{sec:visa-material} 一节），及 1 月 17 日递签资料图表（见 \ref{ap:visa-figures} 节）。
-
-寒假中计划补充“一些建议”一节；添加 ``FAQ'' 一节，后者内容上为其余各节的精简版，但比 ``To-Do List'' 完整。
+当前进度：
+“到德国后” \ref{chap:in-Germany}, ``FAQ'' \ref{chap:faq}.
 
 希望大家随时在 QQ 群里指出有误或写得不清楚的地方。有任何其他建议也可随时在 QQ 群里提出。
 % \end{center}
@@ -57,11 +58,11 @@
 
 这份文档，既为了方便此次访学，也是希望能够为往后的 TUM 交流生铺一条路。
 
-这份文档由 \LaTeX 写作编译成 pdf. 目前放在 \href{https://www.overlear.com}{overleaf.com} （项目名为 \href{https://www.overleaf.com/2269426218fxwmgyxjywnn}{Road-to-TUM}） 以及 \href{https://github.com}{github.com} （项目名为 \href{https://github.com/Memcys/Road-to-TUM.git}{Road-to-TUM}, 同时有利用 Pandoc 不定期从 .tex 转换为 .docx 的 Word 文档）上。目前 overleaf 网络访问不畅通，故新添了 github 项目。
+这份文档由 \LaTeX 写作编译成 pdf. 目前放在 \href{https://github.com}{github.com} （项目名为 \href{https://github.com/Memcys/Road-to-TUM.git}{Road-to-TUM} 以及 \href{https://www.overlear.com}{overleaf.com} （项目名为 \href{https://www.overleaf.com/2269426218fxwmgyxjywnn}{Road-to-TUM}）, 同时有利用 Pandoc 不定期从 .tex 转换为 .docx 的 Word 文档）上。当前文档略大，Overleaf 上编译能力有限。
 
 % 主要内容的增补将同时在文件“\href{https://docs.qq.com/doc/DSHd2dlFVZXpodEpq}{TUM 流程}”中进行（目前PZY同学贡献了多数内容）。现在这两份文件的分别比较大。希望有兴趣的同学可以参与这个文档编写项目。
 
-目前文档正在增添和修补中。文中“做什么”“建议做什么”“为什么这么做”等杂糅。有些地方指出 见附件 等，是直接粘贴的原句。但附件没有上传。此外，videx, 递签等部分细节仍待补充。各节内容都需补充。中英交替，语言表述不够准确、精炼等情况，暂不处理。
+目前文档正在增添和修补中。文中“做什么”“建议做什么”“为什么这么做”等杂糅。有些地方指出 见附件 等，是直接粘贴的原句。但附件没有上传。各节内容都需补充。中英交替，语言表述不够准确、精炼等情况，暂不处理。
 
 \newpage
 
@@ -164,8 +165,6 @@
 
 % \newpage
 \tableofcontents
-\listoftables
-\listoffigures
 % \newpage
 
 \chapter{德国保险}
@@ -418,17 +417,6 @@ TUM 给的建议是选择 AOK 公司。
 \item APS 递签处禁止使用手机等电子设备。（当然，我们拍照属于违规操作。）
 \end{itemize}
 
-
-\section{递签建议}
-\begin{itemize}
-\item \textbf{\color{blue}空白表最好多备几份}，比如联系人声明，保险声明。
-\item\label{print-fee} 照片也多备几张。
-\item 手写内容可在场填写。不确定的地方，可以询问周围学生或保安。
-\item\label{ensurance-Versicherungsbescheinigung} 我们此次出问题的主要是\underline{保险证明}---\textbf{\color{red}务必打印 ``Versicherungsbescheinigung'' 表格}，因为需要其中的 ``Diese Bescheinigung ist maschinell erstellt und \textbf{\color{red}auch ohne Unterschrift gültig}'', 主要是需要其中的“在没有签名的情况下有效”的声明（这也是所有德国未加盖章的文档所需的）---和\underline{申请表}（内容填写与 ZJR 的有别）%，保险证明最好把两个文件都打印了，申请表可以对照群里新更新的模板补充一下（有空更新）。 
-\item EMS 快递单可在 APS 取号后，由一人前往办理（需填写邮寄地址、邮编、手机号及姓名）。
-\end{itemize}
-%
-
 \chapter{德国居留许可申请}
 学生到达德国之后，停留时间超过 3 个月且签证有效期不足以覆盖整个访学期限的，须申请德国居留许可（如果签证有效期能够覆盖整个访学期间，则无需申请居留许可）。
 \begin{itemize}
@@ -496,8 +484,20 @@ Please \textbf{wait for it}: also if your friends already might have received th
 After you logged in TUMonline a new application form appears: Please \textbf{DO NOT} fill in this online application form!! Just \textbf{\color{blue}ignore/cancel this step}!!! So please do \textbf{NOT} enter any personal data in TUMonline! Just upload a photo as mentioned below.
 \end{quotation}
 
-\chapter{到德国后}
+Following are quoted from the email ``Wichtige Informationen für Ihr Austauschstudium an der TUM /important information for your exchange at TUM'':
+\begin{quotation}
+  Proof of enrollment (“Immatrikulationsbescheinigung”: proof that you are a TUM student)
+  \begin{itemize}
+  \item Wait for the e-mail that you are enrolled (from mid- March on)
+  \item Log in on TUMonline with your access data -- please do not fill out a new online application on TUMonline, just cancel this step!
+  \item Download the “proof of enrollment” from your TUMonline account under “prints for students” (e.g. to apply for your residence permit, open a bank account, etc.)
+  \end{itemize}
+\end{quotation}
+
+\chapter{到德国后}\label{chap:in-Germany}
+\section{校园外}
 \begin{itemize}
+  \item 在市政厅办户口（离开德国前注销户口、保险、银行卡，退房）
   \item 银行卡解冻
   \item 地铁卡买全票（90 欧元。我们的仅为 ``Basic Semester Ticket''.）
   \item 保险补全信息
@@ -509,7 +509,104 @@ After you logged in TUMonline a new application form appears: Please \textbf{DO 
   \item \href{https://distributed-campus.org/tumwelcomeguide/portal/media-type/html/language/en/role/student/page/default.psml/js_panename/DCContentObjectAusgabe/language/en/idgroup/19/id/111/typ/text}{Cell Phones (called "Handy" in Germany)}
 \end{itemize}
 
-\chapter{FAQ}
+\section{TUM}
+本节完全引自 email ``Wichtige Informationen für Ihr Austauschstudium an der TUM / important information for your exchange at TUM'' 中附件 \attachfile{Attached/Information_SoSe19_engl.pdf}。
+
+\subsection{TUM Student Card}
+Your TUM Student Card needs to be picked up: \\
+When: April 1st, 2019 -- April 18 th , 2019: Please respect these dates!* \\
+Time: Monday -- Thursday: 9 a.m. -- 12 p.m. and 1 p.m. -- 4 p.m., Friday: 9 a.m. -- 12 p.m. \\
+Where: Room 0120, Arcisstrasse 21, Munich \\
+What do I need to bring: Your passport / National ID Card.
+
+Please bear in mind that due to the information meeting on April 9th 2019 (see next point) you can only collect your Student Card from 9 a.m. -- 12 a.m. on that day!
+
+Note that April 19 th – 22 nd is the Easter break: offices and TUM are closed.
+
+
+\subsection{Information meeting for your time at TUM and in Munich}
+When: Tuesday, April 9 th , 2019 \\
+Time: 2 p.m. -- 3 p.m. \\
+Where: Room 2750, Karl Max von Bauernfeind Hörsaal \\
+This meeting is organized by the Incoming Office of the TUM International Center. We will be available to
+answer any special individual questions after the meeting. \\
+Additionally, many TUM departments offer their own information meetings to inform you about topics that
+are relevant for the department (e.g. courses, exams, etc.). In this case, your TUM department will inform
+you about the place and time. Please attend both information meetings!
+Please bear in mind that due to this meeting you can only collect your Student Card from
+9 a.m. -- 12 a.m. on that day!
+
+
+\subsection{Orientation weeks}
+When: April 8 th , 2019 – April 22 nd , 2019 \\
+Program (will be updated in March): \href{http://www.international.tum.de/en/coming-to-tum/tumi/}{Program} \\
+Contact: \href{mailto:tumi@zv.tum.de}{tumi@zv.tum.de}(organized by TUMi, Mentoring program for exchange students) \\
+During orientation weeks different activities will be offered to get to know TUM, Munich and other students. \\
+Participation is not obligatory, but recommended! You can take part in a single or multiple activities. \\
+Many activities are free of charge (e.g. campus tours), for others you need to pay a small amount (e.g.
+entry-, travelling fees).
+
+
+\subsection{Location of your TUM department / Contacts in your TUM department}
+Munich: Electrical and Computer Engineering, Civil Geo and Environmental Engineering, Architecture,
+School of Management, Sport and Health Sciences, Medicine, School of Education, School of Governance \\
+Garching: Mechanical Engineering, Chemistry, Physics, Informatics, Mathematics, Munich School of
+Engineering. \\
+Freising: School of Life Sciences Weihenstephan
+
+
+
+\subsection{Language courses}
+The TUM Language Center offers German and other language courses. Unfortunately, no guarantee
+can be given for places in TUM German or other language courses!
+Registering for language courses
+\begin{itemize}
+  \item First, you need to fill out a so-called placement test via Moodle.
+  \item Afterwards, you can register for courses and exams via TUMonline or Moodle.
+\end{itemize}
+
+
+\subsection{Legal requirements / visa}
+\begin{enumerate}
+  \item Once you have found a room or apartment and moved in, you must \href{https://www.muenchen.de/rathaus/home_en/Department-of-Public-Order/Registration-Deregistration}{register at your local resident
+  registration office} within two weeks.
+  \item If you need to apply for a (temporary) residence permit in Germany (see link below), you need to do so
+  after your arrival in Germany.
+\end{enumerate}
+All information (register, permit, if you need a visa) can be found here under “\href{http://www.international.tum.de/en/exchangestudents/}{Legal Requirements}”.
+
+
+\subsection{Open a bank account}
+Since 2018 it is obligatory to show a tax-ID for opening a bank account.
+\begin{itemize}
+  \item When coming to Germany, please bring with you your own tax-ID from your home country!
+  \item Where to find it? See \href{http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/}{here} or ask your home university / family.
+\end{itemize}
+You can also get a German tax-ID:
+\begin{itemize}
+  \item Find a room in the city / environment of Munich.
+  \item Register at your local resident registration office (see former point).
+  \item Around 6-8 weeks later you will receive it via post.
+  
+\end{itemize}
+Important: Be aware that 6-8 weeks are often too late for opening a bank account, as e.g. landlords, TUM
+sports (if taking part) need your bank data earlier. So it ́s better to use the one from your home country.
+
+\subsection{A summary: Your contacts at TUM}
+\begin{itemize}
+  \item Courses, examinations, Learning Agreement, all signatures: \href{http://www.international.tum.de/en/internationalaffairs/}{TUM's International Affairs Delegates}
+  \item Language courses: \href{http://www.sprachenzentrum.tum.de/en/languages/german-as-a-foreign-language/}{TUM Language Center}
+  \item Accommodation: Anna Kondratskaya (\href{mailto:incoming\_help@zv.tum.de}{incoming\_help@zv.tum.de})
+  \item Visa: the German Embassy in your home country
+  \item All other questions: until end of February: Dalma Alagha (\href{mailto:alagha@zv.tum.de}{alagha@zv.tum.de}) \\
+  From 1 st of March: \href{mailto:incoming@zv.tum.de}{incoming@zv.tum.de}
+\end{itemize}
+
+These aforementioned points and other information like sports at TUM, opening a bank account, etc. can
+also be found here: “\href{http://www.international.tum.de/en/welcome-to-tum/international-exchange-students/exchange-students/}{Useful Information about living in Munich}”
+
+
+\chapter{FAQ}\label{chap:faq}
 \begin{enumerate}
   \item 请问需要准备一些欧元现金吗？ \\
   现金 \euro{700}，或现金 \euro{$100 \sim 200$} + 信用卡。（第一个月拿不到德意志银行卡。）
@@ -531,30 +628,75 @@ After you logged in TUMonline a new application form appears: Please \textbf{DO 
   (ZJR) 是。计划好时间后尽快预约。不是每周都能去递签。(LMY) 一周中也可能只有一天能够递签。
   \item 预约递签的网址？ \\
   \href{https://service2.diplo.de/rktermin/extern/choose_category.do?locationCode=peki&realmId=12&categoryId=156&request_locale=de}{在线系统预约签证受理}。见 \ref{sec:visa} 节。请务必选择德语界面。英语界面会有部分文字缺失。德语界面在填写时会提供 德/英/中 三语。
+  \item 机票提前买有优惠吗？ \\
+  我们在 12 月、1 月没有看到机票价格的明显上涨（涨幅似乎不超过 100 元人民币)。
+  \item 德银开户时，可以只开半年限制性提款账户吗？
+  (LHB) 大使馆回信（见 \ref{fig:email}），可以。也即只需 \euro{4320}。
+  \item 购买去慕尼黑的机票时，需要同时购买返程机票吗？ \\
+  (ZJR) 不需要。我们是长期签证。
+  \item 在德银办理的一年期限制性提款账户，半年回国后，剩下的钱怎么办？ \\
+  (ZJR) 回国前可以用机票和学校的注销证明去德意志银行解冻。
+  \item 翻译成德文的在学证明需要盖章吗？ \\
+  不需要。
+  \item 签证是否和护照一同寄出？ \\
+  (LMY) 如果申请签证成功，签证将粘贴在护照中，一同寄出；否则，仅寄回护照原件。
+  \item 签证通过与否都会收到邮件通知吗？
+  (PZY) 我记得是拒签了才会邮件通知吧。
+
+  （以下来自邮件 ``Wichtige Informationen für Ihr Austauschstudium an der TUM /important information for your exchange at TUM'' 中附件）
+  \item What to do for enrollment, and until when？ \\
+  Pay your fee, send proof of German national health insurance, and upload a photo
+  (see TUM admission letter), latest by March 1 st , 2019!
+  \item When and how do I know that I’m enrolled at TUM? \\
+  When: from mid-March – after TUM finalized the enrollment process for all exchange students. \\
+  How do I know it: you will receive an automatic e-mail from TUM IT-support.
+  \item When will I receive my TUM e-mail address and what is it for? \\
+  When: from mid-March. \\
+  What is it for: register for courses and exams, receive important information, download documents. \\
+  What else do I need to do: Please do not forget to forward your e-mails from your TUM-account to your
+  private e-mail account (or the other way around). The International Center sends mails only to your private
+  e-mail address. TUM professors and the admission office send e-mails to your TUM e-mail address. Further
+  information in this regard can be found \href{http://www.it.tum.de/en/faq/it-services/e-mail/}{here}.
 \end{enumerate}
 
 \chapter{一些建议}
+\section{德银开户建议}
 \begin{itemize}
   \item 在学证明一次打印盖章即可，共 5 份（我只打了 4 份）。
   \item 大学录取花名册按录取省份划分。建议同一省份同学帮本省同学代领。（但我们没有尝试过）
-  \item (ZZY) 强烈建议所有材料备份两份。
-  \item (PZY) 递签材料中，保险声明、联系人声明、申请表空白表可以多打印几份。
-  \item (PZY) 递签处禁止手机（等电子设备）。可以带纸质书去消遣。
   \item (ZJR) 在德意志银行申请开户时，一定要带上电脑、U 盘，随时准备重新填表。（见 \ref{de-bank-ZJR-laptop-USB}。）
-  \item (ZJR) 签证材料一定要按照要求准备。例如，照片上刘海稍许遮住眉毛，差点被打回重新递签，幸亏有备份照片。材料中信息要一致，如出境日期，所有文件都要填同一日期。
-  \item (ZJR) 字母大小写的问题，一般来说，大写肯定不会出问题。
-  \item (ZJR) VIDEX 表格中停留日期填写 90 天，从 4 月 1 日开始。
-  \item (ZJR) 记得有一句，不是英语的，需提供英语翻译。在学证明需要中英文版本的（附加德文翻译）。
+  \item (ZJR) 字母大小写的问题，一般来说，大写肯定不会出问题。（后面的签证材料也同）
   \item (JHX) 德银开户处交待，不要把材料订起来。
+\end{itemize}
+
+\section{递签建议}
+\begin{itemize}
+% \item (ZZY) 强烈建议所有材料备份两份。
+% \item (PZY) 递签材料中，保险声明、联系人声明、申请表空白表可以多打印几份。
+\item (PZY) 递签处禁止手机（等电子设备）。可以带纸质书去消遣。
+\item (ZZY, PZY) \textbf{\color{blue}空白表最好多备几份}，比如联系人声明，保险声明。
+\item\label{print-fee} 照片也多备几张。
+\item 手写内容可在场填写。不确定的地方，可以询问周围学生或保安。
+\item\label{ensurance-Versicherungsbescheinigung} (PZY) 我们此次出问题的主要是\underline{保险证明}---\textbf{\color{red}务必打印 ``Versicherungsbescheinigung'' 表格}，因为需要其中的 ``Diese Bescheinigung ist maschinell erstellt und \textbf{\color{red}auch ohne Unterschrift gültig}'', 主要是需要其中的“在没有签名的情况下有效”的声明（这也是所有德国未加盖章的文档所需的）---和\underline{申请表}（内容填写与 ZJR 的有别）%，保险证明最好把两个文件都打印了，申请表可以对照群里新更新的模板补充一下（有空更新）。 
+\item EMS 快递单可在 APS 取号后，由一人前往办理（需填写邮寄地址、邮编、手机号及姓名）。
+\item (ZJR) 签证材料一定要按照要求准备。例如，照片上刘海稍许遮住眉毛，差点被打回重新递签，幸亏有备份照片。材料中信息要一致，如出境日期，所有文件都要填同一日期。
+\item (ZJR) VIDEX 表格中停留日期填写 90 天，从 4 月 1 日开始。
+\item (ZJR) 记得有一句，不是英语的，需提供英语翻译。在学证明需要中英文版本的（附加德文翻译）。
+\end{itemize}
+%
+
+\section{其他建议}
+\begin{itemize}
+  \item 访学离校需办理“\href{http://bkjy.ucas.ac.cn/index.php/fxjl/download/3401-2017-06-13-03-47-14?task=down&fid=818}{离校手续单}”和学生、家长签字的“\href{http://bkjy.ucas.ac.cn/index.php/fxjl/download/3400-2017-06-13-03-46-26?task=down&fid=701}{公派赴境外学习交流责任书}”。建议寒假期间打印并填写好。
 \end{itemize}
 
 \begin{appendices}
 % \chapter{附录}\label{ap}
 
 \chapter{中德联系人}
-当前页有意留白。
-% Intentionally add a new page, in convenience for print the following table of contacts.
-\newpage
+% 当前页有意留白。
+% % Intentionally add a new page, in convenience for print the following table of contacts.
+% \newpage
 
 \begin{table}[!htbp]
 \centering
@@ -800,4 +942,8 @@ ZZY：“关于汇款问题，假如你没汇款是会有电话通知。没问�
 
 % 血泪教训： 
 \end{appendices}
+
+\listoftables
+\listoffigures
+
 \end{document}
