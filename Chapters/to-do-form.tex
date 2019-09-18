@@ -1,0 +1,96 @@
+
+（使用合适的 pdf 阅读器，可以点选/取消可选框。）
+\begin{Form}
+\small
+% Following https://tex.stackexchange.com/a/310574
+  \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=process\theenumi]{}}]
+  \item 德国保险
+    \begin{multicols}{2}
+    \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subprocess\theenumii]{}} \arabic*.]
+      \item (AOK)申请表
+      \item certificate for enrollment
+      \item email \href{mailto:alagha@zv.tum.de}{alagha@zv.tum.de}
+    \end{enumerate}  
+    \end{multicols}
+  \item 签证申请
+  % \begin{multicols}{3}
+  \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subprocess\theenumii]{}}]
+    \item videx form
+    \item APS 材料
+      \begin{multicols}{2}
+      \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subsubprocess\theenumiii]{}} \arabic*.]
+        \item APS 注册
+        \item 身份证,护照复印件
+        \item 在学证明原件
+        \item 成绩单原件
+        \item 录取花名册相关页原件
+        \item 中德负责人联系方式
+        \item 汇款单收据的复印件
+      \end{enumerate}
+      \end{multicols}
+    \item 递签材料原件（除了护照，似乎没有强制要求顺序）
+      \begin{multicols}{2}
+        \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subsubprocess\theenumiii]{}} \arabic*.]
+          \item 护照（首页用曲别针夹一张白底二寸照片）
+          \item 录取证明
+          \item 资金证明
+          \item 在读证明
+          \item 保险证明
+          \item 审核证书
+          \item VIDEX 二维码
+          \item EMS 快递单（见 \ref{visa-EMS}）
+        \end{enumerate}
+      \end{multicols}
+    \item 递签材料复印件（2 套。放置顺序有上到下）
+      \begin{multicols}{2}
+      \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subsubprocess\theenumiii]{}} \arabic*.]
+      % \item 1 份 videx 表格最后页（英文第 7 页）
+      \item 德文签证申请表（首页粘贴白底二寸护照照片，地址栏为现居地址，末页中文签名）
+      \item 签证申请补充声明（文件名为“联系方式及代办人的附加证明”。中文签名）
+      \item 护照首页复印件
+      \item TUM 通知书（并通知信）
+      \item 存款证明复印件
+      \item 语言水平证明复印件
+      \item 在学证明（并附\textbf{德文翻译}）
+      \item \textbf{德文}个人简历
+      \item \textbf{德文}留学动机说明
+      \item 审核证书复印件
+      \item 入境后医疗保险证明（见 \ref{ensurance-Versicherungsbescheinigung} ）复印件
+      \item 保险声明%（见 \ref{inline-ensurance-acknowledgement}。放置顺序未知）
+      {\color{gray}\\
+      以下内容不是图 \ref{fig:order-1}, \ref{fig:order-2} 所要求的递签材料。但现金请务必带上。
+      \item 现金（不少于 33 元人民币。见 \ref{inline-money} 及 \ref{print-fee}）
+      \item 预约递签的回复邮件打印版（出处待补充。递签时似乎未提交该材料）
+      }
+      \end{enumerate}
+      \end{multicols}
+    \item 德意志银行开户
+      \begin{multicols}{2}
+      \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subsubprocess\theenumiii]{}} \arabic*.]
+        \item 开户表格（2 份，单面）
+        \item 资金来源证明（中英文）
+        \item 护照、身份证原件 + 1 份复印件
+        \item TUM 通知书 A4 单面
+        \item 登记卡（手写）
+        \item 人民币 850 元（半年期）/ 1200 元（一年期）%（二者均可。注意，转账时仍可能按比例扣除手续费。实际为汇款）
+      \end{enumerate}
+      \end{multicols}
+    \item APS 预约递签
+    \item APS 递签
+    \item 领取护照 (EMS?)
+    % \item APS 的审核证明/审核证书/传真
+  \end{enumerate}
+  % \end{multicols}
+  \item 德国居留许可申请
+  \item 住宿
+  \item 航班
+  \item Registration for TUM
+  \begin{multicols}{2}
+  \begin{enumerate}[label = {\CheckBox[width=.1in,height=.1in,name=subprocess\theenumii]{}}]
+    \item \euro{129,40}
+    \item health insurance
+    \item up-load a photo in TUMonline (and change password)
+  \end{enumerate}
+  \end{multicols}
+  \end{enumerate}
+\end{Form}

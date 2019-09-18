@@ -1,0 +1,95 @@
+\documentclass[oneside,final]{book}
+\usepackage{ctex}
+\usepackage{enumerate}
+\usepackage{enumitem}   % [inline] option for inline enumerate, following https://tex.stackexchange.com/a/146311
+\usepackage[colorlinks]{hyperref}
+\usepackage{bookmark}
+\usepackage[left=3cm,right=3cm]{geometry}
+\usepackage{multicol}
+\usepackage[official]{eurosym}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{appendix}
+% \usepackage{attachfile}
+% % Use for advanced enum-list functionality
+% \usepackage{enumitem}
+
+% For syntax check. I recommend to uncomment the following two lines in the first run.
+% \usepackage{syntonly}
+% \syntaxonly
+
+
+\graphicspath{{Images/},}
+
+% Define my "abstract" title, following https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Abstract
+% \renewcommand{\abstractname}{声明}
+
+\title{\huge{Road to \textbf{\textcolor{blue}{TUM}}}\\for UCASers in Summer, 2019}
+\author{UCASer 16}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\setcounter{chapter}{-1}
+\input{Chapters/preface.tex}
+
+\newpage
+
+\chapter{To-Do List}
+\input{Chapters/to-do-form.tex}
+
+% \newpage
+\tableofcontents
+% \newpage
+
+\chapter{德国保险}
+\input{Chapters/insurance.tex}
+
+\chapter{签证申请}
+\input{Chapters/visa.tex}
+
+\chapter{德国居留许可申请}
+\input{Chapters/stay.tex}
+
+\chapter{住宿}
+\input{Chapters/accomodation.tex}
+
+\chapter{选课}
+\input{Chapters/courses.tex}
+
+\chapter{航班}
+\input{Chapters/flight.tex}
+
+\chapter{Registration for TUM}
+\input{Chapters/registration.tex}
+
+\chapter{到德国后}\label{chap:in-Germany}
+\input{Chapters/in-Germany.tex}
+
+
+\chapter{FAQs 和建议}\label{chap:faq}
+\input{Chapters/FAQs-suggestions}
+
+\begin{appendices}
+\chapter{中德联系人}
+% 当前页有意留白。
+\input{Chapters/appendix-contact.tex}
+
+% Intentionally add a new page, in convenience for print the above table of contacts.
+\newpage
+
+\chapter{德银开户}\label{ap:bank}
+\input{Chapters/appendix-db.tex}
+
+\chapter{1 月 17 日递签资料图表}\label{ap:visa-figures}
+\input{Chapters/appendix-fig-tab.tex}
+
+\end{appendices}
+
+\listoftables
+\listoffigures
+
+\end{document}
